@@ -1,0 +1,17 @@
+[Unit]
+Description=General Info Decision Queue Responder
+After=local-fs.target dt-core.service
+Wants=dt-core.service
+
+[Service]
+Type=oneshot
+User=pi
+Group=pi
+WorkingDirectory=/opt/general-info
+EnvironmentFile=-/etc/general-info/general-info.env
+ExecStart=/usr/bin/python3 /opt/general-info/general_info.py --process
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/general-info/state /var/lib/baypark-decision-queue

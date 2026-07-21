@@ -1,0 +1,11 @@
+state/
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.env
+.env
+secrets/
+credentials/

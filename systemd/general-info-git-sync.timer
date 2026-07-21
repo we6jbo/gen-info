@@ -1,0 +1,9 @@
+[Unit]
+Description=Check General Info public files for Git changes
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=30min
+Persistent=true
+Unit=general-info-git-sync.service
+[Install]
+WantedBy=timers.target

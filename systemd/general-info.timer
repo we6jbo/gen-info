@@ -1,0 +1,9 @@
+[Unit]
+Description=Check Decision Tree queue every five minutes
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+Unit=general-info.service
+[Install]
+WantedBy=timers.target

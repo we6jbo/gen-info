@@ -1,0 +1,10 @@
+[Unit]
+Description=Push General Info public files to GitHub
+After=network-online.target
+Wants=network-online.target
+[Service]
+Type=oneshot
+User=pi
+Group=pi
+WorkingDirectory=/opt/general-info
+ExecStart=/usr/local/sbin/general-info-git-sync

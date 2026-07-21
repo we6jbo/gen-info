@@ -1,0 +1,7 @@
+{
+  "database": "/var/lib/baypark-decision-queue/questions.sqlite3",
+  "target_ip": "192.168.5.215",
+  "minimum_salary": 45000,
+  "cybersecurity_deadline_year": 2035,
+  "max_answers_per_run": 20
+}
